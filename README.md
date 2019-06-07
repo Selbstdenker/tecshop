@@ -15,14 +15,14 @@
 
 > Abra o projeto com o VS Code a partir do próprio GitHub Desktop
 
-> Abra um terminal de linha de comando (vamos chamá-lo de "Terminal de Trabalho")
+> Abra um terminal de linha de comando
 > Navegue até a pasta em que você salvou o projeto clonado (ex.: cd documents => cd github => cd projetoclonado)
 
 > Digite: npm install (isso vai instalar todas as dependências descritas no arquivo 'package.json' de seu projeto)
 
 <h3>Para rodar o projeto: </h3>
 
-> Abra um terminal exclusivo (Vamos chamálo de "Terminal do Banco de Dados")
+> Abra um terminal exclusivo
 > Digite: mongod
 > Deixe rodando 
 
@@ -32,7 +32,7 @@
 > A porta 8083 pode ser conferida ou alterada no final do arquivo app.js do seu projeto
 
 <h3>Para ver o banco de dados (opcional): </h3>
-> Abra um novo terminal ("Terminal de Trabalho do Banco de Dados")
+> Abra um novo terminal
 > Digite: mongo 
 > Digite: show databases
 > Digite: use nomedadatabase
