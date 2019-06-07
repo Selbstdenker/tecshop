@@ -14,5 +14,17 @@ router.get('/produtos', (req, res)=>{
 router.get('/orcamentos', (req, res)=>{
     res.render('main/orcamentos')
 })
+router.get('/comissoes', (req, res)=>{
+    res.render('main/comissoes')
+})
+router.get('/localizacao', (req, res)=>{
+    res.render('main/localizacao')
+})
+router.get('/sobre', (req, res)=>{
+    res.render('main/sobre')
+})
+router.get('/contato', (req, res)=>{
+    res.render('main/contato')
+})
 
 module.exports = router
