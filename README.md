@@ -33,6 +33,7 @@
 
 <h3>Para ver o banco de dados (opcional): </h3>
 > Abra um novo terminal (vamos chamá-lo de "Terminal de Trabalho do Banco de Dados")
+
 > Digite: mongo 
 > Digite: show databases
 > Digite: use nomedadatabase
