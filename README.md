@@ -68,3 +68,14 @@
     --> Use ctrl + c no terminal para parar a execução do node ou do mongodb 
 
 <br>
+
+<h3>DIRETÓRIOS</h3>
+
+A pasta com os CSSs está dentro do diretório Publics. Favor colocar as imagens nesse mesmo diretório, sempre. 
+
+O diretório Public não precisa ser citado como no endereço da rota, mas apenas a partir dele. 
+
+Os partials (top, section, header, footer, etc) estão no diretório views e devem ficar dentro da pasta 'partials' e possuir 
+a extensão .handlebars, de preferência já com o nome claro do que se trata. 
+
+O corpo com as características gerais do site e estrutura HTML está dentro da pasta padrão layouts, em views. 
