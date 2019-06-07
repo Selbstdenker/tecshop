@@ -2,19 +2,19 @@
 
 
 <h3>Dependencias para o projeto: </h3>
-```
+
 Instale o Nodejs direto do site<br>
 Instale o Mongodb direito do site<br>
 Instale o npm direto do site <br>
-```
+
 <br>
 > Instale o github para desktop direto do site<br>
 <br>
-```
+
 Vá a página do projeto<br>
 Escolha a opção "Abrir no Desktop"<br>
 No GitHub Desktop escolha "Clonar" <br>
-```
+
 <br>
 Abra o projeto com o VS Code a partir do próprio GitHub Desktop<br>
 <br>
