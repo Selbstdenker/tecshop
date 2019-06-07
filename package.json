@@ -4,13 +4,14 @@
   "description": "https://mlemesluisa.github.io/tecshop-page/",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "latest",
+    "connect-flash": "latest",
     "express": "latest",
     "express-handlebars": "latest",
-    "mongoose": "latest",
-    "path": "latest",
     "express-session": "latest",
-    "connect-flash": "latest",
-    "body-parser": "latest"
+    "mongoose": "latest",
+    "nodemon": "^1.19.1",
+    "path": "latest"
   },
   "repository": {
     "type": "git",
