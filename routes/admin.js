@@ -26,5 +26,16 @@ router.get('/sobre', (req, res)=>{
 router.get('/contato', (req, res)=>{
     res.render('main/contato')
 })
+router.post('/email', (req, res)=>{
+    console.log('Data: ', req.body)
+    res.json({message: 'Mensagem recebida!'})
+    // generico().then(()=>{
+    //     req.flash('success_msg', "Houve uma falha ao enviar!")
+    //     res.redirect('/contato')
+    // }).catch((err)=>{
+    //     req.flash('error_msg', "Email enviado com sucesso!")
+    //     res.redirect('/contato')
+    // })
+})
 
 module.exports = router
