@@ -9,6 +9,11 @@ const session = require("express-session")
 const flash = require("connect-flash")
 
 //CONFIGURAÇÕES 
+//DATA PARSING
+app.use(express.urlencoded({
+    extended: false
+}))
+app.use(express.json())
 //SESSÃO
 app.use(session({
     secret: "algoseguro",
