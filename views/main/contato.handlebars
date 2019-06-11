@@ -1,17 +1,17 @@
 <div class="contact-form">
-    <p> Envie sua dúvida, sugestão ou reclamação para a <b>TECSHOP</b> - é só seguir os passos a seguir:</p>
+    <p> Envie sua dúvida, sugestão ou reclamação para a <b>TECSHOP</b></p>
     <form method="POST" action="">
         <input type="text" id="subject" placeholder="Assunto" required>
         <input type="email" id="email" placeholder="E-mail" required>
         <textarea id="text" placeholder="Sua Mensagem" required></textarea>
-        <input type="submit" id="submit" value="Enviar">
-        </textarea>
+        <input type="submit" id="submit" value="<i class=" fas fa-share"></i>">
+
     </form>
 </div>
 
 <script>
 
-    $('form').on('submit', (e)=>{
+    $('form').on('submit', (e) => {
         e.preventDefault()
 
         const email = $('#email').val().trim()
@@ -19,12 +19,12 @@
         const text = $('#text').val().trim()
 
         const data = {
-            email, 
-            subject, 
-            text 
+            email,
+            subject,
+            text
         }
 
-        $.post('/email', data, ()=>{
+        $.post('/email', data, () => {
             console.log('Dados recebidos pelo servidor')
         })
     })
