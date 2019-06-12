@@ -11,7 +11,9 @@
     "express-session": "latest",
     "mongoose": "latest",
     "nodemon": "^1.19.1",
-    "path": "latest"
+    "path": "latest",
+    "nodemailer": "latest",
+    "nodemailer-mailgun-transport": "latest"
   },
   "repository": {
     "type": "git",
