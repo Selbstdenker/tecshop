@@ -1,32 +1,10 @@
 <div class="contact-form">
-    <p> Envie sua dúvida, sugestão ou reclamação para a <b>TECSHOP</b>:</p>
-    <form method="POST" action="">
-        <input type="text" id="subject" placeholder="Assunto" required>
-        <input type="email" id="email" placeholder="E-mail" required>
-        <textarea id="text" placeholder="Sua Mensagem" required></textarea>
-        <input type="submit" id="submit"> > </input>
+    <p> Envie sua dúvida, sugestão ou reclamação para a <b>TECSHOP</b></p>
+    <form method="POST" action="email">
+        <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        <textarea id="text" name="text" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" id="submit">Enviar</button>
 
     </form>
 </div>
-
-<script>
-
-    $('form').on('submit', (e) => {
-        e.preventDefault()
-
-        const email = $('#email').val().trim()
-        const subject = $('#subject').val().trim()
-        const text = $('#text').val().trim()
-
-        const data = {
-            email,
-            subject,
-            text
-        }
-
-        $.post('/email', data, () => {
-            console.log('Dados recebidos pelo servidor')
-        })
-    })
-
-</script>
