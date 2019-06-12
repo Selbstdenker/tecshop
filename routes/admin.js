@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const sendMail = require('../mail')
+var emailService = require('../services/mail')
 //const mongoose = require("mongoose")
 //require("../game/Char")
 //require("../game/sketch")
@@ -28,15 +28,22 @@ router.get('/contato', (req, res)=>{
     res.render('main/contato')
 })
 router.post('/email', (req, res)=>{
-    const {subject, email, text} = req.body
-    sendMail(email, subject, text, (err, data)=>{
-        if(err){
-            console.log('erro')
-        }else{
-            console.log('ok')
-        }
-    })
-    res.redirect('/contato')
+    const data = {
+        email: req.body.email, 
+        subject: req.body.subject, 
+        text: req.body.text
+    }
+    emailService.sendService(data.email, data.subject, data.text)
+    // .then(()=>{
+    //     req.flash('success_msg', "Email enviado com sucesso")
+    //     res.redirect('/contato')
+    //     console.log(data)
+    // }).catch(()=>{
+    //     req.flash('error_msg', "Falhar ao enviar")
+    //     res.redirect('/contato')
+    //     console.log('not sended')
+    // })
+    res.redirect('/')
 })
 
 module.exports = router

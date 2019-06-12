@@ -12,8 +12,7 @@
     "mongoose": "latest",
     "nodemon": "^1.19.1",
     "path": "latest",
-    "nodemailer": "latest",
-    "nodemailer-mailgun-transport": "latest"
+    "sendgrid": "^2.0.0"
   },
   "repository": {
     "type": "git",
